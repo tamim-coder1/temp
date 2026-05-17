@@ -19,8 +19,8 @@ pkg install -y python python-pip git wget termux-api 2>/dev/null || true
 
 # 2. Python deps
 echo -e "${GREEN}[2/7] Installing lightweight Python bridge deps...${NC}"
-pip install --upgrade pip -q
-pip install flask curl_cffi requests -q
+
+python -m pip install flask curl_cffi requests -q
 
 # 3. Working dir
 mkdir -p $HOME/arena-bridge
